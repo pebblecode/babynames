@@ -1,0 +1,237 @@
+body{
+	border:none;
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;
+	font-size:3vw;
+	color:white;
+	background-color:#0085C7;
+
+}
+h1{
+	font-family: 'Special Elite', cursive;
+	font-size: 8vw;
+	padding-top:150px;
+	font-weight:800;
+	margin:0;
+	margin-bottom:-30px;
+}
+h2{
+	margin-bottom:-10%;
+}
+.background{
+	display:none;
+	z-index:5;
+	top:0;
+	left:0;
+	position:fixed;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,.35);
+}
+.modal{
+	display:none;
+	z-index:6;
+	position:fixed;
+	width:50%;
+	height:60%;
+	left:25%;
+	top:25%;
+	background-color:#eee;
+	padding:50px;
+	color:#0085C7;
+	font-size:2vw;
+}
+.info{
+	z-index:7;
+	font-size:2vw;
+	font-weight:bold;
+	border:.25vw solid white;
+	border-radius: 5vw;
+	position: fixed;
+	padding-left:1vw;
+	padding-right:1vw;
+	top:50px;
+	right:50px;
+}
+.info:hover{
+	cursor: pointer;
+}
+a{
+	color:#ee4f7e;
+}
+.OverNameCont{
+	overflow: scroll;
+	width:100%;
+	height:auto;
+	padding:10% 5% 10% 5%;
+}
+.NameRow{
+	width:95%;
+}
+
+.button{
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:2px;
+	padding-bottom:3px;
+	border: 1px solid white;
+	border-radius: 8px;
+}
+.loadMore{
+	display:inline-block;
+	width:100%;
+	margin:0 auto;
+	margin-top:-6%;
+	font-size:2vw;
+	text-align:center;
+}
+.loadMore:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.button:hover{
+	background-color:rgba(0,0,0,.2);
+	cursor: pointer;
+}
+.category{
+	border: 2px solid white;
+}
+
+.cat{
+	display:inline-block;
+}
+.CatCont{
+	padding:10% 5% 10% 5%;
+}
+
+.nameCont{
+	font-size:2.5vw;
+	display:inline-block;	
+	margin-left:1%;
+	margin-right:1%;
+	margin-top:1.5%;
+	margin-bottom:1.5%;
+}
+.CategoryRow{
+	min-height:1%;
+	width: 75%;
+    margin: 0 auto;
+}
+
+.NameRow{
+	text-transform: lowercase;
+}
+.intro, .CategoryRow, .NameRow{
+	text-align: center;
+}
+#proto{
+	display:none;
+}
+.Rank, .sex, .N{
+	display:none;
+}
+.down{
+	margin-top:15%;
+	margin-bottom:0%;
+}
+.blue{
+	background-color: #0085C7;
+}
+.purple{
+	background-color: #982395;
+}
+.orange{
+	background-color: #F9A21A;
+}
+.green{
+	background-color:  #00A14A;
+}
+.teal{
+	background-color:  #13A8AC
+}
+
+/*tooltip*/
+/* Some basic styles */
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* Not needed for tooltips to work */
+header,
+.content,
+.content p {
+	margin: 4em 0;
+  text-align: center;
+}
+
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
+	position: relative;
+	z-index: 2;
+	cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	opacity: 0;
+	pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+	position: absolute;
+	bottom: 150%;
+	left: 50%;
+	margin-bottom: 5px;
+	margin-left: -80px;
+	padding: 7px;
+	width: 160px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius:    3px;
+	border-radius:         3px;
+	background-color: #000;
+	background-color: hsla(0, 0%, 20%, 0.9);
+	color: #fff;
+	content: attr(data-tooltip);
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.2;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+	position: absolute;
+	bottom: 150%;
+	left: 50%;
+	margin-left: -5px;
+	width: 0;
+	border-top: 5px solid #000;
+	border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	content: " ";
+	font-size: 0;
+	line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+	visibility: visible;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	opacity: 1;
+}
