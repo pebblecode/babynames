@@ -249,6 +249,7 @@ header,
 	[data-tooltip]:before {
 	font-size: 4vw;
 	width:auto;
+	z-index:4;
 	}
 	.info{
 		font-size:6vw;
