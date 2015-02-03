@@ -254,7 +254,7 @@ header,
 		z-index:10;
 	}
 	[data-tooltip]:before {
-		left:0;
+		left:25%;
 		bottom: 100%;
 		width:340px;
 		z-index:10;
