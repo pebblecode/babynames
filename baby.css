@@ -238,7 +238,7 @@ header,
 
 /*Smartphones*/
 /*@media (max-width: 600px){*/
-@media all and (max-width: 600px){
+@media all and (max-device-width: 600px){
 	.cat{
 		font-size:7vw;
 		margin-bottom: 5%;
