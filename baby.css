@@ -31,7 +31,7 @@ h2{
 }
 .modal{
 	display:none;
-	z-index:6;
+	z-index:20;
 	position:fixed;
 	width:50%;
 	height:60%;
@@ -43,7 +43,7 @@ h2{
 	font-size:2vw;
 }
 .info{
-	z-index:7;
+	z-index:25;
 	font-size:2vw;
 	font-weight:bold;
 	border:.25vw solid white;
@@ -264,7 +264,7 @@ header,
 		z-index: 10;
 	}
 	.info{
-		font-size:6vw;
+		font-size:7vw;
 		border:3px solid white;
 	} 
 	.loadMore{
