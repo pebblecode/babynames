@@ -247,10 +247,11 @@ header,
 		font-size:7vw;
 	}
 	[data-tooltip] {
-		z-index:4;
-	}
+		z-index:4;}
 	[data-tooltip]:before {
 		width:auto;
+		z-index:4;
+		font-size:6vw;
 	}
 	.info{
 		font-size:6vw;
