@@ -240,17 +240,17 @@ header,
 /*@media (max-width: 600px){*/
 @media all and (max-device-width: 600px){
 	.cat{
-		font-size:7vw;
+		font-size:9vw;
 		margin-bottom: 5%;
 	}
 	.nameCont{
-		font-size:7vw;
+		font-size:9vw;
 	}
 	[data-tooltip] {
 		z-index:10;
 	}
 	[data-tooltip]:before {
-		width:auto;
+		width:300px;
 		z-index:10;
 		font-size:3vw;
 	}
