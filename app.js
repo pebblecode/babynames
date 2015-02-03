@@ -96,9 +96,9 @@ function getNames(Names, Categories, Edges, category, color){
 		
 //grey out if only one category
 		if(check==true){
-			$('.Name',container).css('border','2px solid white')
+			$(container).css('border','2px solid white')
 		}else{
-			$('.Name',container).css('border','2px solid #ddd').css('color','#ddd')
+			$(container).css('border','2px solid #ddd').css('color','#ddd')
 		}
 		container.appendTo('.NameRow#'+nameContainerID);
 		//$('.NameCont#proto').after(container);

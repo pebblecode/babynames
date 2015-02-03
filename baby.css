@@ -47,7 +47,7 @@ h2{
 	font-size:2vw;
 	font-weight:bold;
 	border:.25vw solid white;
-	border-radius: 5vw;
+	border-radius: 50%;
 	position: fixed;
 	padding-left:1vw;
 	padding-right:1vw;
@@ -95,11 +95,11 @@ a{
 	cursor: pointer;
 }
 .category{
-	border: 2px solid white;
 }
 
 .cat{
 	display:inline-block;
+	border: 2px solid white;
 }
 .CatCont{
 	padding:10% 5% 10% 5%;
@@ -234,4 +234,35 @@ header,
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 	opacity: 1;
+}
+
+/*Smartphones*/
+@media (max-width: 600px){
+/*@media screen and (max-width: 600px){*/
+	.cat{
+		font-size:7vw;
+		margin-bottom: 5%;
+	}
+	.nameCont{
+		font-size:7vw;
+	}
+	[data-tooltip]:before {
+	font-size: 4vw;
+	}
+	.info{
+		font-size:6vw;
+		border:3px solid white;
+	} 
+	.loadMore{
+
+		font-family:monospace;
+		font-size:6vw;
+	}
+	.modal{
+		width:80%;
+		left:10%;
+		padding:20px;
+		font-size: 4vw;
+	}
+
 }
