@@ -92,7 +92,7 @@ function getNames(Names, Categories, Edges, category, color){
 	 	var check = (checkForCats(name,Edges));
 	 	var ID = makeid(8);
 		var container = $('.NameCont#proto:first').clone(false).attr('id',ID);
-		$('.Name',container).html(nameData[i].Name).attr('data-tooltip',nameData[i].n+' children named '+nameData[i].Name+' in 2013 ('+nameData[i].sex+').');
+		$('.Name',container).html(nameData[i].Name).attr('data-tooltip',nameData[i].n+' '+nameData[i].sex+'s named '+nameData[i].Name+' in 2013.');
 		
 //grey out if only one category
 		if(check==true){
