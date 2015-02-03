@@ -240,17 +240,22 @@ header,
 /*@media (max-width: 600px){*/
 @media all and (max-device-width: 600px){
 	.cat{
+		border: 4px solid white;
 		font-size:9vw;
 		margin-bottom: 5%;
 	}
 	.nameCont{
 		font-size:9vw;
 	}
+	.button{
+		border-radius:15px;
+	}
 	[data-tooltip] {
 		z-index:10;
 	}
 	[data-tooltip]:before {
-		bottom: 90%;
+		left:0;
+		bottom: 100%;
 		width:340px;
 		z-index:10;
 		font-size:3vw;
